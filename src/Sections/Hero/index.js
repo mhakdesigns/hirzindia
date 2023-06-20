@@ -17,7 +17,7 @@ const move = keyframes`
 const HomeSection = styled.section`
   width: 100vw;
   height: 45vw;
-  background-color: #0a0b10;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   position: relative;
@@ -138,6 +138,7 @@ const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
+  color: #041858;
 `;
 
 const SubText = styled.h5`
@@ -189,12 +190,7 @@ const HeroSection = () => {
 
       <MainContent id="home">
         <Lb id="leftBlock">
-          <Topic>
-            <Circle />
-            <span>We Build Web</span>
-          </Topic>
-          <Title>Let's Escape To The Paradise!</Title>
-          <SubText>we help Resorts and Homestays</SubText>
+          <Title>"We Prefer Quality Over Money"</Title>
           <CTA>
             Get in touch &nbsp;
             <img src={arrow} alt="cta" width="100" height="100" />

@@ -72,20 +72,21 @@ const Content = styled.div`
   }
 `;
 
-const Rocket = styled.div`
+const Human = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 40%;
+  width: 30%;
   padding-bottom: 5rem;
   animation: ${move} 2.5s ease infinite;
   @media only Screen and (max-width: 40em) {
     width: 50vw;
     padding-bottom: 0;
+    display:none;
   }
 `;
 
-const Human = styled.div`
+const Humans = styled.div`
   width: 50%;
   position: absolute;
   right: 0;
@@ -120,29 +121,16 @@ const AboutText = styled.div`
 const About = () => {
   return (
     <AboutSection id="about">
-      <Waves src={wave} alt="" />
-      <Hand>
-        <img src={hand} alt="" />
-      </Hand>
       <Main>
         <div>
           <Title>About Us</Title>
           <CurvedLine />
         </div>
         <Content>
-          <Rocket>
-            <img src={rocket} alt="" width="400" height="400" />
-          </Rocket>
           <AboutText>
-            <Human>
-              <img src={human} alt="" width="400" height="400" />
-            </Human>
-
             <Text>
-              We help our customers to tell about themselves, to grow and stand
-              out in an increasingly competitive digital world, through creative
-              projects that are able to attract and involve, creating strategic
-              value.
+            HirzIndia was founded by Muhammed Hashim A K, our CEO, who identified numerous opportunities for quality makers. Drawing upon his experiences and connections, he approached talented individuals to form a company that prioritizes quality. Together, we are committed to delivering exceptional work and guaranteeing quality through a rigorous step-by-step process. Join us for a better future. Thank you for your visit and your valuable time.
+
             </Text>
             <div>
               <Circle style={{ backgroundColor: "var(--purple)" }} />
@@ -150,6 +138,12 @@ const About = () => {
               <Circle style={{ backgroundColor: "var(--black)" }} />
             </div>
           </AboutText>
+          <Human>
+              <img src={human} alt="" width="400" height="400" />
+            </Human>
+          {/* <Rocket>
+            <img src={rocket} alt="" width="400" height="400" />
+          </Rocket> */}
         </Content>
       </Main>
     </AboutSection>

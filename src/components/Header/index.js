@@ -8,8 +8,9 @@ const Headers = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 1rem 5rem;
-  background-color: #6ba37e;
+  padding: 1rem 5rem;
+  height: 5em;
+  background-color: #041858;
   color: var(--white);
   position: relative;
   z-index: 500;
@@ -234,8 +235,8 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        {/* <h3>Partho</h3> */}
+        {/* <img src={logo} alt="hirzindia" /> */}
+        <h3>HirzIndia</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

@@ -143,10 +143,10 @@ const Contact = () => {
     } else {
       emailjs
         .sendForm(
-          "service_c6pzmwk",
-          "template_7tvgaqq",
+          "service_c6pzmwkadsfa",
+          "template_7tvgaqqadf",
           form.current,
-          "d4f2oYw2A329KCNdy"
+          "d4f2oYw2A329KCNdydsf"
         )
         .then(
           (result) => {
@@ -200,7 +200,7 @@ const Contact = () => {
           <span className="not-done">Please fill in all the input fields.</span>
         )}
         {done && (
-          <span style={{ color: "green" ,paddingTop:'10px'}}>
+          <span style={{ color: "green", paddingTop: "10px" }}>
             Thanks for contacting Us. We have received your message. If you have
             any further inquiries, our team will contact asap.
           </span>

@@ -47,9 +47,9 @@ const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2021 Built and Design by{"Partho "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @Partho
+        © 2023 Built and Design by {"HirzIndia "}
+        <a href="#">
+          @HirzIndia  
         </a>
       </LeftText>
       {/* <RightText>
