@@ -143,10 +143,10 @@ const Contact = () => {
     } else {
       emailjs
         .sendForm(
-          "service_c6pzmwkadsfa",
-          "template_7tvgaqqadf",
+          "service_40615ow",
+          "template_l5jnpjn",
           form.current,
-          "d4f2oYw2A329KCNdydsf"
+          "IvGNQgrXsqZzC8ySh"
         )
         .then(
           (result) => {
