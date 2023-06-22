@@ -11,7 +11,10 @@ const CARD = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+  @media only screen and (max-width: 40em) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 const Image = styled.div`
@@ -20,7 +23,6 @@ const Image = styled.div`
   background: url(${(props) => props.img});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
 `;
 
 const TEXT = styled.h4`
@@ -33,6 +35,10 @@ const TEXT = styled.h4`
 const NAME = styled.h3`
   padding-top: 1rem;
   font-size: calc(0.5rem + 1vw);
+  @media only screen and (max-width: 40em) {
+    font-size: 1em;
+    padding-bottom: 0.4rem;
+  }
 `;
 
 const Card = ({ name, text, image }) => {
