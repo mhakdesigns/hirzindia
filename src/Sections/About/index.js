@@ -15,21 +15,6 @@ const AboutSection = styled.section`
   justify-content: center;
   align-items: center;
 `;
-const Waves = styled.img`
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: -1rem;
-`;
-const Hand = styled.div`
-  position: absolute;
-  bottom: -1rem;
-  right: 0;
-
-  @media only Screen and (max-width: 40em) {
-    display: none;
-  }
-`;
 
 const Main = styled.div`
   margin: 0 15rem;
@@ -50,6 +35,9 @@ const Main = styled.div`
 const Title = styled.h1`
   font-size: 2rem;
   display: inline-block;
+  @media only Screen and (max-width: 40em) {
+    font-size: 1.2rem;
+  }
 `;
 
 const CurvedLine = styled.div`
@@ -58,6 +46,11 @@ const CurvedLine = styled.div`
   border: solid 5px var(--purple);
   border-color: var(--purple) transparent transparent transparent;
   border-radius: 150%/60px 70px 0 0;
+  @media only Screen and (max-width: 40em) {
+    width: 5rem;
+    height: 2rem;
+    opacity: 0.5;
+  }
 `;
 
 const Content = styled.div`
@@ -65,7 +58,7 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   @media only Screen and (max-width: 40em) {
-    flex-direction: column;
+    // flex-direction: column;
   }
 `;
 
@@ -79,20 +72,11 @@ const Human = styled.div`
   @media only Screen and (max-width: 40em) {
     width: 50vw;
     padding-bottom: 0;
-    display: none;
+    // display: none;
+    animation: none;
   }
 `;
 
-const Humans = styled.div`
-  width: 50%;
-  position: absolute;
-  right: 0;
-  bottom: 100%;
-
-  @media only Screen and (max-width: 40em) {
-    display: none;
-  }
-`;
 const Text = styled.h4`
   font-size: calc(0.5rem + 1vw);
   line-height: 1.5;
@@ -124,6 +108,16 @@ const About = () => {
           <CurvedLine />
         </div>
         <Content>
+          <Human>
+            <img
+              src={human}
+              alt=""
+              width="400"
+              height="400"
+              style={{ WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)" }}
+            />
+          </Human>
+
           <AboutText>
             <Text>
               HirzIndia was founded by Muhammed Hashim A K, our CEO, who
@@ -140,12 +134,6 @@ const About = () => {
               <Circle style={{ backgroundColor: "var(--black)" }} />
             </div>
           </AboutText>
-          <Human>
-            <img src={human} alt="" width="400" height="400" />
-          </Human>
-          {/* <Rocket>
-            <img src={rocket} alt="" width="400" height="400" />
-          </Rocket> */}
         </Content>
       </Main>
     </AboutSection>
