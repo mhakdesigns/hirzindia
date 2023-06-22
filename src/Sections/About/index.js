@@ -1,8 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import wave from "../../assets/waves.svg";
-import rocket from "../../assets/rocket image.png";
 import human from "../../assets/human.svg";
-import hand from "../../assets/hand.svg";
 
 const move = keyframes`
 0% { transform: translateY(-5px)         }
@@ -82,7 +79,7 @@ const Human = styled.div`
   @media only Screen and (max-width: 40em) {
     width: 50vw;
     padding-bottom: 0;
-    display:none;
+    display: none;
   }
 `;
 
@@ -129,8 +126,13 @@ const About = () => {
         <Content>
           <AboutText>
             <Text>
-            HirzIndia was founded by Muhammed Hashim A K, our CEO, who identified numerous opportunities for quality makers. Drawing upon his experiences and connections, he approached talented individuals to form a company that prioritizes quality. Together, we are committed to delivering exceptional work and guaranteeing quality through a rigorous step-by-step process. Join us for a better future. Thank you for your visit and your valuable time.
-
+              HirzIndia was founded by Muhammed Hashim A K, our CEO, who
+              identified numerous opportunities for quality makers. Drawing upon
+              his experiences and connections, he approached talented
+              individuals to form a company that prioritizes quality. Together,
+              we are committed to delivering exceptional work and guaranteeing
+              quality through a rigorous step-by-step process. Join us for a
+              better future. Thank you for your visit and your valuable time.
             </Text>
             <div>
               <Circle style={{ backgroundColor: "var(--purple)" }} />
@@ -139,8 +141,8 @@ const About = () => {
             </div>
           </AboutText>
           <Human>
-              <img src={human} alt="" width="400" height="400" />
-            </Human>
+            <img src={human} alt="" width="400" height="400" />
+          </Human>
           {/* <Rocket>
             <img src={rocket} alt="" width="400" height="400" />
           </Rocket> */}

@@ -7,6 +7,7 @@ import Services from "../Sections/Services/index";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
+import ServiceCard from "../components/ServiceCard";
 
 const Container = styled.div`
   display: flex;
@@ -21,8 +22,7 @@ const Home = () => {
     <Container>
       <HeroSection />
       <About />
-      {/* <Services /> */}
-      {/* <Testimonials /> */}
+     <ServiceCard/>
       <Contact />
     </Container>
   );
