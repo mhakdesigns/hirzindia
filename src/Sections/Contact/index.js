@@ -167,7 +167,7 @@ const Contact = () => {
         <a href="https://www.facebook.com/">
           <img src={Facebook} alt="Facebook" />
         </a>
-        <a href="https://www.instagram.com/partho.info/">
+        <a href="https://www.instagram.com/">
           <img src={Instagram} alt="Instagram" />
         </a>
       </Icons>
