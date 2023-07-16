@@ -1,0 +1,11 @@
+.arrow{
+    animation: arrowAnimation 2s ease-in-out infinite;
+    transform-origin: center;
+    color: #ffffff;
+
+}
+@keyframes arrowAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }

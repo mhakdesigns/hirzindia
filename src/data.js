@@ -11,8 +11,6 @@ import vrassist from "./assets/vrassist.svg";
 import ad from "./assets/ad.svg";
 import translate from "./assets/translate.svg";
 
-
-
 const serviceData = [
   {
     title: "Web Development",
@@ -30,7 +28,7 @@ const serviceData = [
     img: content,
   },
   {
-    title: "Graphic Design:",
+    title: "Graphic Design",
     disc: " Create stunning visuals and branding materials to enhance your online presence and engage your audience effectively.",
     img: graphic,
   },

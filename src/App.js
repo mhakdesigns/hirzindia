@@ -1,24 +1,14 @@
-import { GlobalStyle } from "./globalStyles";
-import { lazy, Suspense } from "react";
+import React from "react";
+import Home from "./pages/Home";
+// import Services from "./pages/Services";
 
-const Home = lazy(() => import("./Pages/Home"));
-const Header = lazy(() => import("./components/Header/index"));
-const Footer = lazy(() => import("./components/Footer/index"));
-const ScrollToTop = lazy(() => import("./components/ScrollToTop/index"));
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Suspense fallback={null}>
-        <GlobalStyle />
-        {/* Hi There! */}
-        <ScrollToTop />
-        <Header />
-        <Home />
-        <Footer />
-      </Suspense>
-    </>
+    <div>
+      {/* <Services/> */}
+      <Home/>
+    </div>
   );
-}
+};
 
 export default App;
