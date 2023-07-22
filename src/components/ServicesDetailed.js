@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import Service from "./Service";
 import serviceData from "../data";
+import ServicesDetailedCard from "./ServicesDetailedCard";
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #d8d7d7; */
+  @media (max-width: 480px) {
+    
+  }
 `;
 const Content = styled.div`
-  /* background-color: #774c63; */
-  height: 600px;
   width: 100%;
   padding: 30px;
   display: flex;
@@ -34,47 +33,29 @@ const Cards = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   @media (max-width: 480px) {
+    grid-template-columns: 100%;
     margin: 50px 0;
-    gap: 10px;
+    gap: 50px;
   }
 `;
 
-const Button = styled.button`
-  /* top: 300px;
-  position: absolute;
-  left: 30px; */
-  background-color: #004658;
-  color: white;
-  padding: 10px;
-  width: 150px;
-  margin-top: 10px;
-  border: none;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  @media (max-width: 480px) {
-    margin-top: 30px;
-    top: 250px;
-  }
-  &:hover {
-    color: white;
-    background-color: black;
-    cursor: pointer;
-  }
-`;
-const Services = () => {
+const ServicesDetailed = () => {
   return (
     <Container>
       <Content>
         <H>Our Services</H>
         <Cards>
           {serviceData.map((item) => (
-            <Service title={item.title} img={item.img} />
+            <ServicesDetailedCard
+              title={item.title}
+              img={item.img}
+              desc={item.disc}
+            />
           ))}
         </Cards>
-        <Button>Explore Now</Button>
       </Content>
     </Container>
   );
 };
 
-export default Services;
+export default ServicesDetailed;

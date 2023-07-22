@@ -1,168 +1,225 @@
 import React from "react";
-import styled from "styled-components";
-import logo from "../assets/hlogob.png";
+import "../animations.css";
+import { Link } from "react-router-dom";
 
-const Container = styled.div`
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: column; */
-`;
-const Sec2 = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  margin-left: 500px;
-  @media (max-width: 480px) {
-  }
-`;
-const Sec1 = styled.div`
-  margin-bottom: 50px;
-`;
-const Logo = styled.img`
-  flex: 1;
-  height: 220px;
-  width: 220px;
-  @media (max-width: 480px) {
-    height: 110px;
-    width: 110px;
-  }
-`;
-const Ul = styled.ul`
-  display: flex;
-  list-style: none;
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
-  column-count: 6;
-  flex-flow: wrap column;
-`;
-
-const Li = styled.li`
-  cursor: pointer;
-  padding: 10px;
-  color: #fff;
-  &:hover {
-    text-decoration: underline;
-  }
-  a {
-    color: #fff;
-  }
-`;
-const Navitems = styled.div`
-  margin: 10px 50px;
-  margin-bottom: 0;
-  @media (max-width: 480px) {
-    display: none;
-  }
-`;
-const Navitems2 = styled.div`
-  margin: 10px 50px;
-  margin-bottom: 0;
-  @media (max-width: 480px) {
-    /* display: none; */
-  }
-`;
-const NavH = styled.h3`
-  color: white;
-  margin-left: 10px;
-`;
-const CopyRight = styled.div`
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: #80808060;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a {
-    color: white;
-    font-size: small;
-  }
-`;
-const Company = styled.div`
-  position: absolute;
-  background-color: #DFD3C3;
-  /* top: 0; */
-  bottom: 100px;
-  left: 250px;
-  width: 300px;
-  height: 300px;
-  h4 {
-    text-align: center;
-    color: #fff;
-  }
-
-  @media (max-width: 480px) {
-    bottom: 300px;
-    left: 10px;
-    width: 200px;
-    height: 200px;
-  }
-`;
 const Footer = () => {
   return (
-    <Container>
-      <Sec1>
-        <Company>
-          <Logo src={logo} />
-          <h4>"We Prefer Quality Over Money"</h4>
-        </Company>
-      </Sec1>
-      <Sec2>
-        <Navitems>
-          <NavH>Our services</NavH>
-          <Ul>
-            <Li>Web Development</Li>
-            <Li>Translation</Li>
-            <Li> Content Creation</Li>
-            <Li>(SEO)</Li>
-            <Li>Social Media Management</Li>
-            <Li>Copywriting and Editing</Li>
-          </Ul>
-        </Navitems>
-        <Navitems>
-          <Ul>
-            <Li style={{ color: "black" }}> E-commerce Solutions</Li>
-            <Li> E-commerce Solutions</Li>
-            <Li>Digital Marketing</Li>
-            <Li>Mobile App Development</Li>
-            <Li>Virtual Assistant Services</Li>
-            <Li>Online Advertising & PPC</Li>
-            <Li style={{ color: "black" }}> E-commerce Solutions</Li>
-          </Ul>
-        </Navitems>
-        <Navitems2>
-          <NavH>Contact</NavH>
-          <Ul>
-            <Li>
-              <a href="">+9100000000</a>
-            </Li>
-            <Li>
-              <a href="">+9100000000</a>
-            </Li>
-            <Li>
-              <a href="mailto:hirzindia@gmail.com">hirzindia@gmail.com</a>
-            </Li>
-            <Li>
-              <a href="">kerala,India</a>
-            </Li>
-            <Li style={{ color: "black" }}> E-commerce Solutions</Li>
-          </Ul>
-        </Navitems2>
-      </Sec2>
-      <CopyRight>
-        <a href=""> Copyright All rights reserved.</a>
-      </CopyRight>
-    </Container>
+    <div className="pg-footer">
+      <footer className="footer">
+        <svg
+          className="footer-wave-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            className="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"
+          ></path>
+        </svg>
+        <div className="footer-content">
+          <div className="footer-content-column">
+            <div className="footer-logo">
+              <a className="footer-logo-link" href="#">
+                <span className="hidden-link-text">LOGO</span>
+                <h1>HirzIndia</h1>
+              </a>
+            </div>
+            <div className="footer-menu">
+              <h2 className="footer-menu-name">Get Started</h2>
+              <ul id="menu-get-started" className="footer-menu-list">
+                <li className="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Start</a>
+                </li>
+                {/* <li className="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Documentation</a>
+                </li> */}
+                {/* <li className="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Installation</a>
+                </li> */}
+              </ul>
+            </div>
+          </div>
+          <div className="footer-content-column">
+            <div className="footer-menu">
+              <h2 className="footer-menu-name">Company</h2>
+              <ul id="menu-company" className="footer-menu-list">
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Contact</a>
+                </li>
+                {/* <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="#">News</a>
+                </li> */}
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-menu">
+              <h2 className="footer-menu-name">Legal</h2>
+              <ul id="menu-legal" className="footer-menu-list">
+                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                  <a href="#">Privacy Notice</a>
+                </li>
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-content-column">
+            <div className="footer-menu">
+              <h2 className="footer-menu-name">Quick Links</h2>
+              <ul id="menu-quick-links" className="footer-menu-list">
+                <li className="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a target="_blank" rel="noopener noreferrer" href="#">
+                    Support Center
+                  </a>
+                </li>
+                <Link to="/services">
+                  <li className="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a target="_blank" rel="noopener noreferrer" href="#">
+                      Our Services
+                    </a>
+                  </li>
+                </Link>
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Security</a>
+                </li>
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Blog</a>
+                </li>
+                <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                  <a href="#">Customers</a>
+                </li>
+                <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Reviews</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-content-column">
+            <div className="footer-call-to-action">
+              <h2 className="footer-call-to-action-title">Let's Chat</h2>
+              <p className="footer-call-to-action-description">
+                Have a support question?
+              </p>
+              <a
+                className="footer-call-to-action-button button"
+                href="#"
+                target="_self"
+              >
+                Get in Touch
+              </a>
+            </div>
+            <div className="footer-call-to-action">
+              <h2 className="footer-call-to-action-title">You Call Us</h2>
+              <p className="footer-call-to-action-link-wrapper">
+                <a
+                  className="footer-call-to-action-link"
+                  href="tel:+919656769107"
+                  target="_self"
+                >
+                  +91965 676 9107
+                </a>
+              </p>
+              <p className="footer-call-to-action-link-wrapper">
+                <a
+                  className="footer-call-to-action-link"
+                  href="mailto:hirzindia@gmail.com"
+                  target="_self"
+                >
+                  hirzindia@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="footer-social-links">
+            <svg
+              className="footer-social-amoeba-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 236 54"
+            >
+              <path
+                className="footer-social-amoeba-path"
+                d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"
+              ></path>
+            </svg>
+            <a
+              className="footer-social-link linkedin"
+              href="https://www.instagram.com/hirzindia_official/"
+              target="_blank"
+            >
+              <span className="hidden-link-text">Linkedin</span>
+              <svg
+                className="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  className="footer-social-icon-path"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+            <a
+              className="footer-social-link twitter"
+              href="https://www.instagram.com/hirzindia_official/"
+              target="_blank"
+            >
+              <span className="hidden-link-text">Twitter</span>
+              <svg
+                className="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  className="footer-social-icon-path"
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </a>
+            <a className="footer-social-link youtube" href="#" target="_blank">
+              <span className="hidden-link-text">Youtube</span>
+
+              <svg
+                className="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  className="footer-social-icon-path"
+                  d="M 9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
+                ></path>
+              </svg>
+            </a>
+            <a className="footer-social-link github" href="#" target="_blank">
+              <span className="hidden-link-text">Github</span>
+
+              <svg
+                className="footer-social-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+              >
+                <path
+                  className="footer-social-icon-path"
+                  d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 "
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div className="footer-copyright">
+          <div className="footer-copyright-wrapper">
+            <p className="footer-copyright-text">
+              <a className="footer-copyright-link" href="#" target="_self">
+                ©2023. | Designed By: HirzIndia team. | All rights reserved.
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 

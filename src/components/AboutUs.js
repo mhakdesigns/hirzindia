@@ -64,7 +64,7 @@ const AboutUs = () => {
         <Image src={image} />
         <Content>
           <Aboutus>
-            Welcome to your <b style={{ color: " #774c63" }}>webmate!</b> With a
+            Welcome to your <b style={{ color: " #004658" }}>webmate!</b> With a
             proud history spanning over three years, <br />
             we have amassed extensive expertise in the fields of web
             development, <br />

@@ -6,13 +6,13 @@ const Nav = styled.div`
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: #85586f;
+  top: 0;
+  background-color: #6d7993;
+  background-color: #2f3542;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin: 10px 0 ; */
-  /* border-radius: 6px; */
   padding: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;

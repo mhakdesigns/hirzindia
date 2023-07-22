@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Ul = styled.ul`
@@ -11,7 +12,7 @@ const Li = styled.li`
   cursor: pointer;
   padding: 10px;
   color: #f8ede3;
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 `;
@@ -24,13 +25,29 @@ const NavItems = () => {
   return (
     <Navitems>
       <Ul>
-        <Li>Home</Li>
-        <Li>Services</Li>
-        <Li>Portfolio</Li>
-        <Li>About Us</Li>
-        <Li>Blog</Li>
-        <Li>Careers</Li>
-        <Li style={{ border: "1px solid grey" }}>Contact</Li>
+        <Link to="/">
+          <Li>Home</Li>
+        </Link>
+        <Link to="/services">
+          <Li>Services</Li>
+        </Link>
+        <Link to="/portfolio">
+          <Li>Portfolio</Li>
+        </Link>
+        <Link to="/aboutUs">
+          <Li>About Us</Li>
+        </Link>
+
+        <Link to="/blog">
+          <Li>Blog</Li>
+        </Link>
+        <Link to="/careers">
+          <Li>Careers</Li>
+        </Link>
+
+        <Link to="/contact">
+          <Li style={{ border: "1px solid grey" }}>Contact</Li>
+        </Link>
       </Ul>
     </Navitems>
   );

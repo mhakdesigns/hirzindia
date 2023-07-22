@@ -14,52 +14,53 @@ import translate from "./assets/translate.svg";
 const serviceData = [
   {
     title: "Web Development",
-    disc: "Create a stunning, user-friendly website that reflects your brand. Engage your audience with our expert web development services.",
+    disc: "Build a professional and visually appealing online presence with our web development services. Our expert team will create a customized website that reflects your brand identity, engages your audience, and delivers a seamless user experience.",
     img: devimg,
   },
   {
     title: "Translation",
-    disc: "Expand globally with accurate, culturally sensitive translations. Overcome language barriers and effectively communicate across cultures.",
+    disc: "Break down language barriers and expand your global reach with our translation services. Our skilled translators ensure accurate and culturally sensitive translations, helping you effectively communicate your message across different languages and cultures.",
     img: translate,
   },
   {
     title: "Content Creation",
-    disc: "Engage, inform, and drive traffic with captivating content from our talented creators. Boost your brand authority online.",
+    disc: "Fuel your online presence with captivating and informative content. Our talented content creators will develop engaging articles, blog posts, and website copy that resonates with your target audience, drives traffic, and boosts your brand authority.",
     img: content,
   },
   {
     title: "Graphic Design",
-    disc: " Create stunning visuals and branding materials to enhance your online presence and engage your audience effectively.",
+    disc: "Create stunning visuals and branding materials to enhance your online presence and engage your audience effectively.",
     img: graphic,
   },
   {
     title: "(SEO)",
-    disc: "Increase website visibility and organic traffic through search engine optimization (SEO). Rank higher on search engine results pages and boost your online presence.",
+    disc: "Boost your website’s visibility and organic traffic by optimizing it to rank higher on search engine results pages.",
     img: seo,
   },
   {
     title: "Social Media Management",
-    disc: "Connect with your target audience through expert social media management, content creation, and engagement strategies. Maximize your online presence.",
+    disc: "Maximize your social media presence with expert management, content creation, and engagement strategies to connect with your target audience.",
     img: social,
   },
   {
     title: "Copywriting and Editing",
-    disc: "Drive conversions with compelling, error-free content for your website, blogs, and marketing materials. Resonate with your audience effectively.",
+    disc: "Get compelling, error-free content for your website, blogs, and marketing materials that resonate with your audience and drive conversions.",
     img: copywrite,
   },
   {
     title: "E-commerce Solutions",
-    disc: "Create a seamless shopping experience with our optimized online store setup. Effortlessly manage products and ensure exceptional transactions for your customers.",
+    disc: "Set up and optimize your online store for seamless transactions, easy product management, and an exceptional shopping experience.",
+  
     img: ecomerce,
   },
   {
     title: "Digital Marketing",
-    disc: "Target and engage your audience with strategic digital marketing. Maximize reach through email, PPC, and social media campaigns.",
+    disc: "T Reach and engage your target audience through strategic digital marketing campaigns, including email marketing, PPC advertising, and social media marketing.",
     img: marketing,
   },
   {
     title: "Mobile App Development",
-    disc: "Enhance user experience and expand your reach with custom iOS and Android mobile apps. Extend your online presence conveniently.",
+    disc: "Extend your online presence with customized mobile apps for iOS and Android platforms, providing convenient access and enhancing user experience.",
     img: mobile,
   },
   {
@@ -69,7 +70,7 @@ const serviceData = [
   },
   {
     title: "Online Advertising & PPC ",
-    disc: " Boost website traffic with targeted online ads and expert PPC management. Drive results through effective advertising campaigns.",
+    disc: "Drive targeted traffic to your website through effective online advertising campaigns and expert management of pay-per-click (PPC) ads.",
     img: ad,
   },
 ];

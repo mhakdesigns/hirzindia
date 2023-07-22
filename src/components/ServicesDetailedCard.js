@@ -4,8 +4,8 @@ import styled from "styled-components";
 const Card = styled.div`
   /* background-color: #; */
   border: none;
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -19,9 +19,8 @@ const Card = styled.div`
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
   @media (max-width: 480px) {
-    width: 100px;
-  height: 120px;
-    
+    width: 400px;
+  height: 400px;
   }
 `;
 
@@ -34,16 +33,19 @@ const Title = styled.h3`
 `;
 
 const Image = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   align-self: center;
 `;
 const Desc = styled.h5`
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+`;
 
-`
-
-const Service = ({ title, img, desc }) => {
+const ServicesDetailedCard = ({ title, img, desc }) => {
   return (
     <Card>
       <Image src={img} />
@@ -53,4 +55,4 @@ const Service = ({ title, img, desc }) => {
   );
 };
 
-export default Service;
+export default ServicesDetailedCard;

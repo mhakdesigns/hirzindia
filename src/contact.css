@@ -1,0 +1,33 @@
+.footer-wave-svg {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+  }
+  .footer-wave-path {
+    fill: #206b7e;
+  }
+  .footer-wave-svg2 {
+    background-color: #206b7e;
+    display: block;
+    height: 30px;
+    position: relative;
+    /* top: px; */
+    width: 100%;
+  }
+  .footer-wave-path2 {
+    fill:white;
+  }
+  .footer-wave-svg1 {
+    background-color: #206b7e;
+    display: block;
+    height: 30px;
+    position: relative;
+    /* top: px; */
+    width: 100%;
+  }
+  .footer-wave-path1 {
+    fill:#206b7e;
+  }
