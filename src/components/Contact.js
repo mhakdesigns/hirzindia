@@ -14,7 +14,7 @@ const ContactSections = styled.section`
 `;
 
 const Title = styled.h1`
-  color: black;
+  color: white;
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -221,7 +221,7 @@ const ContactSection = () => {
           <span className="not-done">Please fill in all the input fields.</span>
         )}
         {done && (
-          <span style={{ color: "green", paddingTop: "10px" }}>
+          <span style={{ color: "white", paddingTop: "10px" }}>
             Thanks for contacting Us. We have received your message. If you have
             any further inquiries, our team will contact asap.
           </span>

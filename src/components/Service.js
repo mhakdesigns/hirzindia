@@ -18,7 +18,7 @@ const Card = styled.div`
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     width: 100px;
   height: 120px;
     
@@ -28,7 +28,7 @@ const Card = styled.div`
 const Title = styled.h3`
   text-align: center;
   font-size: 15px;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     padding: 0 10px 10px 10px;
   }
 `;

@@ -33,7 +33,7 @@ const Cards = styled.div`
   margin: 50px 50px 50px 100px;
   display: grid;
   grid-template-columns: auto auto auto;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     margin: 50px 0;
     gap: 10px;
   }
@@ -51,7 +51,7 @@ const Button = styled.button`
   border: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     margin-top: 30px;
     top: 250px;
   }

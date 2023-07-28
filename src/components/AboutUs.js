@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     /* height: 120vh; */
   }
 `;
@@ -22,7 +22,7 @@ const About = styled.h1`
   justify-content: center;
   align-items: center;
   margin: 0 80px 50px 0;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     margin: 0 ;
     color: #774c63;
   }
@@ -33,13 +33,13 @@ const Aboutus = styled.p`
   flex: 1;
   line-height: 35px;
   font-size: 25px;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
 const Aboutus1 = styled.p`
   display: none;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     font-size: 15px;
     display: block;
     margin: 20px;
@@ -51,7 +51,7 @@ const Image = styled.img`
   flex: 1;
   align-items: center;
   justify-content: center;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;

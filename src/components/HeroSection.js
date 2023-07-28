@@ -13,7 +13,7 @@ const Container = styled.div`
   /* background-color: #774c63; */
   background-color: #004658;
 
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     height: 60vh;
   }
 `;
@@ -24,7 +24,7 @@ const Motive = styled.h1`
   left: 20px;
   top: 200px;
   color: #2094b1;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     position: absolute;
     font-size: 3em;
     text-align: left;
@@ -41,7 +41,7 @@ const Button = styled.button`
   border: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     position: absolute;
     margin-top: 30px;
     top: 280px;
@@ -62,7 +62,7 @@ const Arrow = styled.svg`
   left: 50%;
   text-align: center;
   animation: ${arrowAnimation} 2s ease-in-out infinite;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     /* bottom: 0; */
     position: absolute;
     top: 500px;
