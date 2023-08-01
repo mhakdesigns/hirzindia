@@ -42,7 +42,7 @@ const NavItems = () => {
           <Li>Blog</Li>
         </Link>
         <Link to="/careers">
-          <Li>Careers</Li>
+          {/* <Li>Careers</Li> */}
         </Link>
 
         <Link to="/contact">

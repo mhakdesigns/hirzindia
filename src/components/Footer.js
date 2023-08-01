@@ -104,13 +104,13 @@ const Footer = () => {
               <p className="footer-call-to-action-description">
                 Have a support question?
               </p>
-              <a
+              {/* <a
                 className="footer-call-to-action-button button"
                 href="#"
                 target="_self"
               >
                 Get in Touch
-              </a>
+              </a> */}
             </div>
             <div className="footer-call-to-action">
               <h2 className="footer-call-to-action-title">You Call Us</h2>
